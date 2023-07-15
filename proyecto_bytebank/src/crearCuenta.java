@@ -1,15 +1,15 @@
 public class crearCuenta {
     public static void main(String[] args) {
 //      Variable           = Valor
-        cuenta primeraCuenta = new cuenta();
-        primeraCuenta.saldo = 1000;
+        cuenta primeraCuenta = new cuenta(1);
+        primeraCuenta.depositar(1000);
 //      primeraCuenta.pais = "Peru"; No compila
-        System.out.println(primeraCuenta.saldo);
+        System.out.println(primeraCuenta.getSaldo());
 
-        cuenta segundaCuenta = new cuenta();
-        segundaCuenta.saldo = 500;
+        cuenta segundaCuenta = new cuenta(1);
+        segundaCuenta.depositar(500);
 
-        System.out.println(segundaCuenta.saldo);
-        System.out.println(primeraCuenta.agencia);
+        System.out.println(segundaCuenta.getSaldo());
+        System.out.println(primeraCuenta.getAgencia());
     }
 }
