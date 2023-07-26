@@ -9,8 +9,8 @@ public class Gerente extends Funcionario {
         return clave == "mlp";
     }
 
-    //    Sobrescritura del metodo
+    @Override
     public double getBonificacion() {
-        return super.getSalario() + super.getBonificacion();
+        return getSalario() + (getSalario() * 0.1);
     }
 }

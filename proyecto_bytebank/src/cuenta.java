@@ -8,6 +8,7 @@ class cuenta {
         if (agencia <= 0){
             System.out.println("No se permiten 0");
             this.agencia = 1;
+
         } else {
             this.agencia = agencia;
         }
